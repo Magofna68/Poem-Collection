@@ -7,9 +7,13 @@ import Nav from 'react-bootstrap/esm/Nav';
 import NavbarCollapse from 'react-bootstrap/esm/NavbarCollapse';
 import NavbarToggle from 'react-bootstrap/esm/NavbarToggle';
 
-
-
 import ITyped from './components/Ityped';
+
+import Footer from "./components/Footer";
+import HomePage from "./components/Home/HomePage";
+import AboutPage from "./components/About/AboutPage";
+import CollectionPage from "./components/Collection/CollectionPage";
+
 
 
 class App extends React.Component {
@@ -27,7 +31,7 @@ class App extends React.Component {
       home: {
         title: 'Poems of a Lifetime by Brandon Magofna',
         subTitle: 'Checkout my featured poem for the month:',
-        // text: <ITyped/>,
+        text: <ITyped/>,
       },
       about: {
         title: 'Meet Brandon.',

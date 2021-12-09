@@ -1,5 +1,5 @@
 import React from 'react';
-import home from '../Home/home.scss';
+import home from './home.scss';
 import { init } from 'ityped';
 import ITyped from '../Ityped';
 
