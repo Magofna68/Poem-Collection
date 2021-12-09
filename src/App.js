@@ -2,8 +2,12 @@
 // import './App.css';
 import React from 'react';
 import { BrowserRouter as Router, Route, Link } from 'react-router-dom';
-import { Container, Navbar, NavbarToggle, NavbarCollapse} from 'react-bootstrap';
+import { Container, Navbar} from 'react-bootstrap';
 import Nav from 'react-bootstrap/esm/Nav';
+import NavbarCollapse from 'react-bootstrap/esm/NavbarCollapse';
+import NavbarToggle from 'react-bootstrap/esm/NavbarToggle';
+
+
 
 import ITyped from './components/Ityped';
 
@@ -23,7 +27,7 @@ class App extends React.Component {
       home: {
         title: 'Poems of a Lifetime by Brandon Magofna',
         subTitle: 'Checkout my featured poem for the month:',
-        text: <ITyped/>,
+        // text: <ITyped/>,
       },
       about: {
         title: 'Meet Brandon.',
@@ -67,7 +71,7 @@ class App extends React.Component {
             <Route path="/about" exact render={()=> <AboutPage title={this.state.about.title} subTitle={this.state.about.subTitle} text={this.state.about.text}/>}/>
             <Route path="/collection" exact render={()=> <CollectionPage title={this.state.collection.title} subTitle={this.state.collection.subTitle} text={this.state.collection.text}/>}/>
             <Footer/>
-            </Container>
+          </Container>
       </Router>
     )
   }
