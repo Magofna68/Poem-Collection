@@ -10,9 +10,9 @@ import NavbarToggle from 'react-bootstrap/esm/NavbarToggle';
 import ITyped from './components/Ityped';
 
 import Footer from "./components/Footer";
-import HomePage from "./components/Home/HomePage";
-import AboutPage from "./components/About/AboutPage";
-import CollectionPage from "./components/Collection/CollectionPage";
+// import HomePage from "./components/Home/HomePage";
+// import AboutPage from "./components/About/AboutPage";
+// import CollectionPage from "./components/Collection/CollectionPage";
 import reactDom from 'react-dom';
 
 
@@ -73,9 +73,9 @@ class App extends React.Component {
               </Nav>
             </NavbarCollapse>
             </Navbar>
-            <Route path="/" exact render={()=> <HomePage title={this.state.home.title} subTitle={this.state.home.subString} text={this.state.home.text} />} />
+            {/* <Route path="/" exact render={()=> <HomePage title={this.state.home.title} subTitle={this.state.home.subString} text={this.state.home.text} />} />
             <Route path="/about" exact render={()=> <AboutPage title={this.state.about.title} subTitle={this.state.about.subTitle} text={this.state.about.text}/>}/>
-            <Route path="/collection" exact render={()=> <CollectionPage title={this.state.collection.title} subTitle={this.state.collection.subTitle} text={this.state.collection.text}/>}/>
+            <Route path="/collection" exact render={()=> <CollectionPage title={this.state.collection.title} subTitle={this.state.collection.subTitle} text={this.state.collection.text}/>}/> */}
             <Footer/>
           </Container>
       </Router>

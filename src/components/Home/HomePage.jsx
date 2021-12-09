@@ -1,18 +1,13 @@
-// import React from 'react';
-// import { init } from 'ityped';
-// import ITyped from '../Ityped';
-// import "./home.scss";
+// import React, { Component } from 'react';
 
-// function HomePage(props) {
-
-//   return (
-//     <div>
-//       {/* <Banner /> */}
-//       <Hero title={props.title} subTitle={props.subTitle} />
-//       <br></br>
-//       <Hero text={props.text} />
-//     </div >
-//   );
+// class HomePage extends Component {
+//     render() {
+//         return (
+//             <div>
+                
+//             </div>
+//         );
+//     }
 // }
 
 // export default HomePage;
