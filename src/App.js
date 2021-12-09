@@ -1,6 +1,6 @@
 // import logo from './logo.svg';
 // import './App.css';
-import React from 'react';
+import React, {Fragment} from 'react';
 import { BrowserRouter as Router, Route, Link } from 'react-router-dom';
 import { Container, Navbar} from 'react-bootstrap';
 import Nav from 'react-bootstrap/esm/Nav';
@@ -13,6 +13,7 @@ import Footer from "./components/Footer";
 import HomePage from "./components/Home/HomePage";
 import AboutPage from "./components/About/AboutPage";
 import CollectionPage from "./components/Collection/CollectionPage";
+import reactDom from 'react-dom';
 
 
 
@@ -48,6 +49,7 @@ class App extends React.Component {
 
   render() {
     return (
+      <Fragment>
       <Router>
         <Container className="p-0" fluid={true}>
           <Navbar className="border-bottom" bg="transparent" expand="lg">
@@ -77,6 +79,7 @@ class App extends React.Component {
             <Footer/>
           </Container>
       </Router>
+      </Fragment>
     )
   }
 }
