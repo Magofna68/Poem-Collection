@@ -51,10 +51,23 @@ class App extends React.Component {
             <NavbarCollapse id="navbar-toggle">
               <Nav className="ml-auto">
                 <Link className="nav-link" to="/">Home</Link>
-                <Link className="nav-link" to="/">About</Link>
-                <Link className="nav-link" to="/">Collection</Link>
+                <Link className="nav-link" to="/about">About</Link>
+                <Link className="nav-link" to="/collection">Collection</Link>
+
+                {/* <div className="anchorTag1">
+                  <a href="https://www.instagram.com/maddie_vitalityfitness/" alt="instagram"><span><InstagramIcon fontSize="large" /></span></a>
+                </div>
+                <div className="anchorTag2">
+                  <a href="https://www.facebook.com/maddie.kiplinger" alt="facebook"><span><FacebookIcon fontSize="large" /></span></a>
+                </div> */}
               </Nav>
             </NavbarCollapse>
+            </Navbar>
+            <Route path="/" exact render={()=> <HomePage title={this.state.home.title} subTitle={this.state.home.subString} text={this.state.home.text} />} />
+            <Route path="/about" exact render={()=> <AboutPage title={this.state.about.title} subTitle={this.state.about.subTitle} text={this.state.about.text}/>}/>
+            <Route path="/collection" exact render={()=> <CollectionPage title={this.state.collection.title} subTitle={this.state.collection.subTitle} text={this.state.collection.text}/>}/>
+            <Footer/>
+            </Container>
       </Router>
     )
   }
