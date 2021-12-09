@@ -1,8 +1,9 @@
 // import logo from './logo.svg';
 // import './App.css';
 import React, {Fragment} from 'react';
-import { BrowserRouter as Router, Route, Link } from 'react-router-dom';
-import { Container, Navbar} from 'react-bootstrap';
+import { BrowserRouter as Router, Route, Link, Routes } from 'react-router-dom';
+import { Container} from 'react-bootstrap';
+import Navbar from 'react-bootstrap/Navbar'
 import Nav from 'react-bootstrap/esm/Nav';
 import NavbarCollapse from 'react-bootstrap/esm/NavbarCollapse';
 import NavbarToggle from 'react-bootstrap/esm/NavbarToggle';
@@ -10,9 +11,9 @@ import NavbarToggle from 'react-bootstrap/esm/NavbarToggle';
 import ITyped from './components/Ityped';
 
 import Footer from "./components/Footer";
-// import HomePage from "./components/Home/HomePage";
+import HomePage from "./components/Home/HomePage";
 // import AboutPage from "./components/About/AboutPage";
-// import CollectionPage from "./components/Collection/CollectionPage";
+import CollectionPage from "./components/Collection/CollectionPage";
 import reactDom from 'react-dom';
 
 
@@ -39,7 +40,7 @@ class App extends React.Component {
         subTitle: 'Author, Developer, & Content Creater',
         // text: <ITyped/>,
       },
-      poems: {
+      collection: {
         title: 'My Archive: Poem\'s of a Lifetime.',
         subTitle: 'Even on the darkest of nights, all it takes is a single star to illuminate the sky.',
         text: '"Poetry is the clear expression of mixed feelings."',
@@ -49,7 +50,7 @@ class App extends React.Component {
 
   render() {
     return (
-      <Fragment>
+      // <Fragment>
       <Router>
         <Container className="p-0" fluid={true}>
           <Navbar className="border-bottom" bg="transparent" expand="lg">
@@ -73,13 +74,15 @@ class App extends React.Component {
               </Nav>
             </NavbarCollapse>
             </Navbar>
-            {/* <Route path="/" exact render={()=> <HomePage title={this.state.home.title} subTitle={this.state.home.subString} text={this.state.home.text} />} />
-            <Route path="/about" exact render={()=> <AboutPage title={this.state.about.title} subTitle={this.state.about.subTitle} text={this.state.about.text}/>}/>
-            <Route path="/collection" exact render={()=> <CollectionPage title={this.state.collection.title} subTitle={this.state.collection.subTitle} text={this.state.collection.text}/>}/> */}
+            <Routes>
+              <Route path="/" element={<HomePage title={this.state.home.title} subTitle={this.state.home.subString} text={this.state.home.text} />} />
+            {/* {/* <Route path="/about" exact element={<AboutPage title={this.state.about.title} subTitle={this.state.about.subTitle} text={this.state.about.text}/>}/> */}
+            <Route path="/collection" exact element={<CollectionPage title={this.state.collection.title} subTitle={this.state.collection.subTitle} text={this.state.collection.text}/>}/>
+            </Routes>
             <Footer/>
           </Container>
       </Router>
-      </Fragment>
+      // </Fragment>
     )
   }
 }

@@ -1,13 +1,17 @@
-// import React, { Component } from 'react';
+import React from 'react';
+import Hero from '../Hero';
 
-// class HomePage extends Component {
-//     render() {
-//         return (
-//             <div>
-                
-//             </div>
-//         );
-//     }
-// }
+function HomePage(props) {
 
-// export default HomePage;
+    return (
+        <div>
+            <Hero title={props.title} subTitle={props.subTitle}/>
+            <br/>
+            <br/>
+            <Hero text={props.text}/>
+            
+        </div>
+    );
+}
+
+export default HomePage;

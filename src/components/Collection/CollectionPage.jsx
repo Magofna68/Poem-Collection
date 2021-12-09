@@ -1,13 +1,14 @@
-// import React, { Component } from 'react';
+import React from 'react';
+// import './collection.scss';
 
-// class CollectionPage extends Component {
-//     render() {
-//         return (
-//             <div>
-                
-//             </div>
-//         );
-//     }
-// }
+function CollectionPage(props) {
+    return (
+        <div>
+            {props.title}
+            {props.subTitle}
+            {props.text}
+        </div>
+    );
+}
 
-// export default CollectionPage;
+export default CollectionPage;
