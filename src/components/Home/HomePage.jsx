@@ -5,7 +5,7 @@ function HomePage(props) {
 
     return (
         <div>
-            <Hero title={props.title} subTitle={props.subTitle}/>
+            <h3><Hero title={props.title} subTitle={props.subTitle}/></h3>
             <br/>
             <br/>
             <Hero text={props.text}/>

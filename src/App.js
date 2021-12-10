@@ -1,5 +1,5 @@
 // import logo from './logo.svg';
-// import './App.css';
+import './App.css';
 import React, {Fragment} from 'react';
 import { BrowserRouter as Router, Route, Link, Routes } from 'react-router-dom';
 import { Container} from 'react-bootstrap';
@@ -27,7 +27,7 @@ class App extends React.Component {
       headerLinks: [
         { title: 'Home', path: '/' },
         { title: 'About', path: '/about' },
-        { title: 'Poem List', path: '/poems' },
+        { title: 'Collection', path: '/collection' },
         // { title: 'Home', path: '/' },
       ],
       home: {
@@ -43,7 +43,7 @@ class App extends React.Component {
       collection: {
         title: 'My Archive: Poem\'s of a Lifetime.',
         subTitle: 'Even on the darkest of nights, all it takes is a single star to illuminate the sky.',
-        text: '"Poetry is the clear expression of mixed feelings."',
+        text: `"Poetry is the clear expression of mixed feelings."`,
       }
     }
   }
