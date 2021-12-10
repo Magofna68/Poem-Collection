@@ -60,7 +60,7 @@ class App extends React.Component {
             </Navbar.Brand>
 
             <NavbarToggle className="border-0" aria-controls="navbar-toggle"/>
-            <NavbarCollapse id="navbar-toggle">
+            <NavbarCollapse id="basic-navbar-toggle">
               <Nav className="ml-auto">
                 <Link className="nav-link" to="/">Home</Link>
                 <Link className="nav-link" to="/about">About</Link>
@@ -77,7 +77,7 @@ class App extends React.Component {
             </Navbar>
             <Routes>
               <Route path="/" element={<HomePage title={this.state.home.title} subTitle={this.state.home.subString} text={this.state.home.text} />} />
-              <Route path="/about" exact element={<AboutPage title={this.state.about.title} subTitle={this.state.about.subTitle} text={this.state.about.text}/>}/> */}
+              <Route path="/about" exact element={<AboutPage title={this.state.about.title} subTitle={this.state.about.subTitle} text={this.state.about.text}/>}/>
               <Route path="/collection" exact element={<CollectionPage title={this.state.collection.title} subTitle={this.state.collection.subTitle} text={this.state.collection.text}/>}/>
             </Routes>
             <Footer/>
