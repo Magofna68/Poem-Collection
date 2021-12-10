@@ -6,8 +6,8 @@ function HomePage(props) {
 
     return (
         <div id="homePage">
-            <h3><Hero title={props.title}/></h3>
-            <h3><Hero subTitle={props.subTitle}/></h3>
+            <h1><Hero title={props.title}/></h1>
+            <h6><Hero subTitle={props.subTitle}/></h6>
             <br/>
             <br/>
             <Hero text={props.text}/>

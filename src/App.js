@@ -11,7 +11,7 @@ import NavbarToggle from 'react-bootstrap/esm/NavbarToggle';
 
 import ITyped from './components/Ityped';
 
-import Footer from "./components/Footer";
+import Footer from "./components/Footer/Footer.jsx";
 import HomePage from "./components/Home/HomePage";
 import AboutPage from "./components/About/AboutPage";
 import CollectionPage from "./components/Collection/CollectionPage";
@@ -54,7 +54,7 @@ class App extends React.Component {
 
       <Router>
         <Container className="p-0" fluid={true}>
-          <Navbar className="border-bottom" bg="transparent" expand="lg">
+          <Navbar className="border-bottom" bg="transparent" expand="md">
             <Navbar.Brand>
               <Link className="logo" to="/">Greatness Awaits</Link>
             </Navbar.Brand>
@@ -76,7 +76,7 @@ class App extends React.Component {
             </NavbarCollapse>
             </Navbar>
             <Routes>
-              <Route path="/" element={<HomePage title={this.state.home.title} subTitle={this.state.home.subString} text={this.state.home.text} />} />
+              <Route path="/" element={<HomePage title={this.state.home.title} subTitle={this.state.home.subTitle} text={this.state.home.text} />} />
               <Route path="/about" exact element={<AboutPage title={this.state.about.title} subTitle={this.state.about.subTitle} text={this.state.about.text}/>}/>
               <Route path="/collection" exact element={<CollectionPage title={this.state.collection.title} subTitle={this.state.collection.subTitle} text={this.state.collection.text}/>}/>
             </Routes>

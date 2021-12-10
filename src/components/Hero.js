@@ -5,11 +5,11 @@ import Col from 'react-bootstrap/Col';
 
 function Hero(props) {
     return (
-        <Container fluid={true} className="bg-transparent jumbotron-fluid p-0">
-            <Row className="justify-content-center py-5">
+        <Container fluid={true} className="bg-transparent jumbotron-fluid p-2">
+            <Row className="justify-content-center py-4">
                 <Col md={8} s={12}>
-                    {props.subTitle && <h3 className="display-4 font-weight-lighter">{props.subTitle}</h3>}
                     {props.title && <h1 className="display-1 bolder">{props.title}</h1>}
+                    {props.subTitle && <h6 className="display-6 font-weight-lighter">{props.subTitle}</h6>}
                     {props.text && <h3 className="lead font-weight-bolder">{props.text}</h3>}
                 </Col>
             </Row>
