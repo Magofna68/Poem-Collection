@@ -51,37 +51,44 @@ class App extends React.Component {
   render() {
     return (
       // <Fragment>
-      <Router>
-        <Container className="p-0" fluid={true}>
-          <Navbar className="border-bottom" bg="transparent" expand="lg">
-            <Navbar.Brand>
-              <Link className="logo" to="/poems">Greatness Awaits</Link>
-            </Navbar.Brand>
+<Container>
+  <Navbar expand="lg" variant="light" bg="light">
+    <Container>
+      <Navbar.Brand href="#">Navbar</Navbar.Brand>
+    </Container>
+  </Navbar>
+</Container>
+      // <Router>
+      //   <Container className="p-0" fluid={true}>
+      //     <Navbar className="border-bottom" bg="transparent" expand="lg">
+      //       <Navbar.Brand>
+      //         <Link className="logo" to="/poems">Greatness Awaits</Link>
+      //       </Navbar.Brand>
 
-            <NavbarToggle className="border-0" aria-controls="navbar-toggle"/>
-            <NavbarCollapse id="navbar-toggle">
-              <Nav className="ml-auto">
-                <Link className="nav-link" to="/">Home</Link>
-                <Link className="nav-link" to="/about">About</Link>
-                <Link className="nav-link" to="/collection">Collection</Link>
+      //       <NavbarToggle className="border-0" aria-controls="navbar-toggle"/>
+      //       <NavbarCollapse id="navbar-toggle">
+      //         <Nav className="ml-auto">
+      //           <Link className="nav-link" to="/">Home</Link>
+      //           <Link className="nav-link" to="/about">About</Link>
+      //           <Link className="nav-link" to="/collection">Collection</Link>
 
-                {/* <div className="anchorTag1">
-                  <a href="https://www.instagram.com/maddie_vitalityfitness/" alt="instagram"><span><InstagramIcon fontSize="large" /></span></a>
-                </div>
-                <div className="anchorTag2">
-                  <a href="https://www.facebook.com/maddie.kiplinger" alt="facebook"><span><FacebookIcon fontSize="large" /></span></a>
-                </div> */}
-              </Nav>
-            </NavbarCollapse>
-            </Navbar>
-            <Routes>
-              <Route path="/" element={<HomePage title={this.state.home.title} subTitle={this.state.home.subString} text={this.state.home.text} />} />
-            {/* {/* <Route path="/about" exact element={<AboutPage title={this.state.about.title} subTitle={this.state.about.subTitle} text={this.state.about.text}/>}/> */}
-            <Route path="/collection" exact element={<CollectionPage title={this.state.collection.title} subTitle={this.state.collection.subTitle} text={this.state.collection.text}/>}/>
-            </Routes>
-            <Footer/>
-          </Container>
-      </Router>
+      //           {/* <div className="anchorTag1">
+      //             <a href="https://www.instagram.com/maddie_vitalityfitness/" alt="instagram"><span><InstagramIcon fontSize="large" /></span></a>
+      //           </div>
+      //           <div className="anchorTag2">
+      //             <a href="https://www.facebook.com/maddie.kiplinger" alt="facebook"><span><FacebookIcon fontSize="large" /></span></a>
+      //           </div> */}
+      //         </Nav>
+      //       </NavbarCollapse>
+      //       </Navbar>
+      //       <Routes>
+      //         <Route path="/" element={<HomePage title={this.state.home.title} subTitle={this.state.home.subString} text={this.state.home.text} />} />
+      //       {/* {/* <Route path="/about" exact element={<AboutPage title={this.state.about.title} subTitle={this.state.about.subTitle} text={this.state.about.text}/>}/> */}
+      //       <Route path="/collection" exact element={<CollectionPage title={this.state.collection.title} subTitle={this.state.collection.subTitle} text={this.state.collection.text}/>}/>
+      //       </Routes>
+      //       <Footer/>
+      //     </Container>
+      // </Router>
       // </Fragment>
     )
   }
