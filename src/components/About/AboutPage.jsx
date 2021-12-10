@@ -1,15 +1,15 @@
-// import "../About/about.scss";
+import "../About/about.scss";
 
-// import React, { Component } from 'react';
+import React from 'react';
 
-// class AboutPage extends Component {
-//     render() {
-//         return (
-//             <div>
-                
-//             </div>
-//         );
-//     }
-// }
+function AboutPage(props) {
+    return (
+        <div>
+            <h1>{props.title}</h1>
+            <h3>{props.subTitle}</h3>
+            <h4>{props.text}</h4>
+        </div>
+    );
+}
 
-// export default AboutPage;
+export default AboutPage;
