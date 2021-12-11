@@ -1,4 +1,14 @@
 #footer {
     background-color: black;
     border: solid 1px black;
+    color: white;
+    // text-decoration: underline;
+}
+
+#footer a {
+    -webkit-text-fill-color: black;
+    -webkit-text-stroke-color: white;
+    -webkit-text-stroke: 1px;
+    // font-weight: bold;
+    text-decoration: underline;
 }

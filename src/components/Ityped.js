@@ -1,18 +1,19 @@
-import React, { Component } from 'react'
-import { init } from 'ityped'
-// import { Hidden } from '@material-ui/core'
+import React, { Component } from 'react';
+import { init } from 'ityped';
+// import { Hidden } from '@material-ui/core';
 
 export default class ITyped extends Component {
   componentDidMount() {
     const myElement = document.querySelector('#myElement')
     init(myElement, {
-      disabledBackTyping: false,
-      showCursor: false,
-      strings: ['Elevate Your Gains.', 'Greatness Awaits.', 'Tomorrow Starts Today.'],
-      typeSpeed: 85,
-      backDelay: 1500,
+      // disabledBackTyping: false,
+      // showCursor: true,
+      strings: ['Poem #1.', 'Poem ll Awaits.', 'Start Tomorrow with a Poem Today.'],
+      // typeSpeed: 85,
+      // backDelay: 500,
       loop: true,
-      cursorChar: "|",
+      // cursorChar: "|",
+      // placeholder: "Check out these featured Poems:"
     })
   }
   render() {

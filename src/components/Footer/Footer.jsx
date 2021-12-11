@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
+import './footer.scss';
 
 function Footer() {
     return (
@@ -13,7 +14,7 @@ function Footer() {
                             <strong>Something goes Here.</strong>
                         </Col>
                         <Col className="p-0 d-flex justify-content-end md-3">
-                            <strong>This site was made by Brandon Magofna.</strong>
+                            <strong>This site was made by <a href="/about" id="site-author">Brandon Magofna.</a></strong>
                         </Col>
                     </Row>
                 </Container>
