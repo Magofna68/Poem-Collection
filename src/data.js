@@ -87,9 +87,33 @@ export const data = [
 },
 {
     id: 4,
-    title: "",
-    alt: "",
+    title: "Beauty Is..",
+    date: "Date Unknown: updated 2021",
     img: "",
+    text: `"Beauty is the wind rustling through the trees,
+    the warm hot sun and scent of ocean breeze,
+    it is the sunlight dancing around in her hair,
+    her radiating presence is well beyond compare.
+    
+    Beauty is the soft, calm, rhythmic water,
+    being bathed in sunlight; getting hotter and hotter,
+    It is the gleam contained within her dazzling smile,
+    her sensual skin and unraveling style.
+    
+    Beauty is witnessing birds lay claim to the sky,
+    the flare of the wind and the clouds drifting by,
+    It is the absolute polarity of flaws and perfections,
+    tainted from Eden, yet angel in reflection.
+    
+    Beauty is her laughter as it envelop’s my soul,
+    I give up thoughts and emotions, as they seize from control,
+    Just her presence ultimately uplifts my day,
+    A wild-free spirit roaming far and astray.
+    
+    Beauty is the declining daylight of the suns last rays,
+    It is not ever wanting the bond to sever,
+    and hoping the moment lasts forever,
+    Beauty is waking back up to reality."`,
 },
 {
     id: 5,
