@@ -88,7 +88,7 @@ export const data = [
 {
     id: 4,
     title: "Beauty Is..",
-    date: "Date Unknown: updated 2021",
+    date: "Date Unknown: updated Dec 15th, 2021",
     img: "",
     text: `"Beauty is the wind rustling through the trees,
     the warm hot sun and scent of ocean breeze,
@@ -112,7 +112,7 @@ export const data = [
     
     Beauty is the declining daylight of the suns last rays,
     It is not ever wanting the bond to sever,
-    and hoping the moment lasts forever,
+    and hoping the moment lasts forever.
     Beauty is waking back up to reality."`,
 },
 {
