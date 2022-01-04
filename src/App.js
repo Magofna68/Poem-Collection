@@ -40,7 +40,7 @@ class App extends React.Component {
       about: {
         title: 'Meet Brandon.',
         subTitle: 'Author, Developer, & Content Creater',
-        // text: <ITyped/>,
+        text: 'This is my story..',
       },
       collection: {
         title: 'My Archive: Poem\'s of a Lifetime.',

@@ -2,11 +2,14 @@
     background-color: black;
     border: solid 1px black;
     color: white;
+    bottom: 0;
+    position: absolute;
+    width: 100vw;
     // text-decoration: underline;
 }
 
 #footer a {
-    -webkit-text-fill-color: black;
+    -webkit-text-fill-color: rgb(247, 243, 243);
     -webkit-text-stroke-color: white;
     -webkit-text-stroke: 1px;
     // font-weight: bold;
