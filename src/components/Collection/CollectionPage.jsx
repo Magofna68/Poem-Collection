@@ -1,5 +1,5 @@
 import React, {useState, useEffect} from 'react';
-// import './collection.scss';
+import './collection.scss'
 import data, { featured2010, featured2011, featured2012, featured2013, featured2014, featured2015, featuredPreview } from "../../data.js";
 import List from '../List/List.jsx';
 
@@ -89,19 +89,21 @@ return (
         opacity: `90%`,
         backgroundSize: `cover`,
         repeat: `no-repeat`,
-      backgroundImage: `url("https://cdn.pixabay.com/photo/2019/11/14/13/01/abstract-4626113_1280.jpg")`
+    //   backgroundImage: `url("https://cdn.pixabay.com/photo/2019/11/14/13/01/abstract-4626113_1280.jpg")`
     }}>
+        <br/>
         <h1>Poem Archive.</h1>
         <br/>
         <ul>
-            {yearList.map((item)=>(
+            {yearList.map((year)=>(
                 <List
-                    title={item.title}
-                    active={selected === item.id}
+                    title={year.title}
+                    active={selected === year.id}
                     setSelected={setSelected}
-                    id={item.id}
+                    id={year.id}
                 />
             ))}
+            <br/>
         </ul>
         <div clasName="container">
             <>
