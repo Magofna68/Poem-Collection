@@ -12,6 +12,7 @@ export default function CollectionPage() {
         {
             id: 2010,
             title: 2010,
+            // poems: 
         },
         {
             id: 2011,
@@ -89,7 +90,7 @@ return (
         opacity: `90%`,
         backgroundSize: `cover`,
         repeat: `no-repeat`,
-    //   backgroundImage: `url("https://cdn.pixabay.com/photo/2019/11/14/13/01/abstract-4626113_1280.jpg")`
+      backgroundImage: `url("https://cdn.pixabay.com/photo/2019/11/14/13/01/abstract-4626113_1280.jpg")`
     }}>
         <br/>
         <h1>Poem Archive.</h1>
@@ -101,6 +102,7 @@ return (
                     active={selected === year.id}
                     setSelected={setSelected}
                     id={year.id}
+                    // onClick = {handleClick}
                 />
             ))}
             <br/>

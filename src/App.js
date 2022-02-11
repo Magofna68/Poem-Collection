@@ -77,9 +77,30 @@ class App extends React.Component {
             </NavbarCollapse>
             </Navbar>
             <Routes>
-              <Route path="/" element={<HomePage title={this.state.home.title} credentials={this.state.home.credentials} subTitle={this.state.home.subTitle} text={this.state.home.text} />} />
-              <Route path="/about" exact element={<AboutPage title={this.state.about.title} subTitle={this.state.about.subTitle} text={this.state.about.text}/>}/>
-              <Route path="/collection" exact element={<CollectionPage title={this.state.collection.title} subTitle={this.state.collection.subTitle} text={this.state.collection.text}/>}/>
+              <Route 
+                path="/" 
+                element={<HomePage 
+                  title={this.state.home.title} 
+                  credentials={this.state.home.credentials} 
+                  subTitle={this.state.home.subTitle} 
+                  text={this.state.home.text} />} 
+              />
+              <Route 
+                path="/about" 
+                exact 
+                element={<AboutPage 
+                  title={this.state.about.title} 
+                  subTitle={this.state.about.subTitle} 
+                  text={this.state.about.text}/>}
+              />
+              <Route 
+                path="/collection" 
+                exact 
+                element={<CollectionPage 
+                  title={this.state.collection.title} 
+                  subTitle={this.state.collection.subTitle} 
+                  text={this.state.collection.text}/>}
+                />
             </Routes>
             <Footer/>
         </Container>

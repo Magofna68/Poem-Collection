@@ -3,6 +3,8 @@
 export const featuredPreview = [
     {
         id: 1,
+        year: 2010,
+        status: "Poems of a Life Time: Featured",
         title: "The Oath of Promise",
         alt: "",
         img: "https://d2r55xnwy6nx47.cloudfront.net/uploads/2018/01/BigBounce_2880x1220.gif",
